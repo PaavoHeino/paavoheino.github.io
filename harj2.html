@@ -3,18 +3,38 @@
 <head>
  <meta charset="UTF-8">
  <title>Ravintola Oula</title>
+ <link rel="stylesheet" type="text/css" href="./css/harj2.css">
 </head>
 <body>
- <h1>Ravintola Oula</h1>
 
+        <button onclick="topFunction()" id="top" title="Go to top">Alkuun</button>
+
+
+        <header>
+<ul>
+        <ul class="navi">
+    <li class="navi"><a href="#kuvat">Kuvia</a></li>
+    <li class="navi"><a href="#ruokalista">Ruokalista</a></li>
+    <li class="navi"><a href="#aikataulu">Aukioloajat</a></li>
+    <li class="navi"><a href="#varaus">Varaus</a></li>
+    <li class="navi"><a href="#yhteys">Yhteystiedot</a></li>
+    <li class="navi"><a href="#sijainti">Sijainti</a></li>
+</ul>
+</header>
+
+
+ <h1>Ravintola Oula</h1>
+<section id="kuvat">
+        <a name="kuvat"></a>
  <img src="./kuvat/ruoka.jpg" alt="Ruokaa">
  <img src="./kuvat/ruoka1.jpg" alt="Ruokaa">
  <img src="./kuvat/ruoka2.jpg" alt="Ruokaa">
  <img src="./kuvat/ruoka3.jpg" alt="Ruokaa">
  <img src="./kuvat/ruoka4.jpg" alt="Ruokaa">
-  <h2>Lounaat</h2>
  <ul>
- 
+    </section>
+ <section id="ruokalista">
+<h2>Lounaat</h2>
  <li><strong>Maanantai:</strong> <br>Juusto-vihanneskeittoa ja kokin sämpylä
  Paistettua lohta, sinappikastiketta, tilliperunoita ja kasviksia
  Marjakiisseliä ja hunajakermavaahtoa</li>
@@ -38,20 +58,73 @@
  <p>
  Lounaan hinta on 11&euro;, lounas sisältää ruokajuoman.
  </p>
-
+</section>
+<section id="aikataulu">
  <h3>Aukioloajat</h3>
  <li>ma - pe 10:30 - 15:00</li>
  <li>la 11:00 - 15:00</li>
  <li>pe ja la 17:00 - 21:00 à la carte -lista</li>
+</section>
 
- <address>
+ <form action onsubmit="Varaus()">
+<section id="varaus">
+ <h3>Luo pöytävaraus</h3>
+
+ Etunimi<br>
+ <input type="text" name="enimi" id="enimi"><br>
+ Email<br>
+<input type="email" name="gmail" id="gmail"><br>
+Puhelinnumero<br>
+<input type="number" name="pnumero" id="pnumero"><br>
+Varaus päivä<br>
+<input type="date" name="varaus" id="varaus"><br>
+Muut toiveet<br>
+<textarea name="toive" id="toive"></textarea><br>
+<input type="submit" value="Lähetä tiedot"><br>
+
+<script>
+    function Varaus() {
+        alert("Varaus lähetetty!");
+    }
+</script>
+
+</form>
+</section>
+<section>
+ <address id="yhteys">
+     <div id="yhteystiedot">
     <br>Ravintola Oula<br>
     Hallituskatu 12<br>
     96200 ROVANIEMI<br>
     <br>Puh. (016) 555 4755<br>
     Fax (016) 555 4756<br>
     E-Mail: ravintola.oula@oulanet.fi<br>
-    </address>
+    </address><br>
+</div>
+</section>
+<div id="paikkakartta">
+    <section id="sijainti">
+    <a name="sijainti">Sijainti</a><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1591.1075110584827!2d25.723684822062886!3d66.49731956413827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x442b4bed11188d49%3A0x1657bd88c2a942ae!2sHallituskatu%2012%2C%2096100%20Rovaniemi!5e0!3m2!1sfi!2sfi!4v1601963490171!5m2!1sfi!2sfi" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>    
+</section>
+
+    <script>
+        var mybutton = document.getElementById("top");
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
  
  
  
