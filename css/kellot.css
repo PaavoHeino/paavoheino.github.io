@@ -4,6 +4,19 @@
     margin: 0;
     padding: 0;
 }
+
+ul.navi {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    height: 60px;
+    width: fit-content;
+    float: right;
+}
+
+
  
 div.container {
     display: flex;
@@ -14,34 +27,22 @@ div.container {
 }
  
 header {
-    height: 12%;
+    height: 100%;
     flex: 100%;
     background: blue;
 }
  
 nav {
-    height: 5%;
+    height: 6%;
     flex: 100%;
-    background: teal;
+    background: rgb(58, 64, 90);
  
 }
  
-article {
-    height: 78%;
-    flex: 58.33333%;
-    background: thistle;
- 
-}
 figure {
     height: 78%;
     flex: 25%;
     background: violet;
-}
- 
-aside {
-    height: 78%;
-    flex: 16.666666%;
-    background: tomato;
 }
  
 footer {
@@ -72,23 +73,14 @@ footer {
         
         }
         
-        article {
-            height: 69%;
-            flex: 58.33333%;
-            background: thistle;
         
-        }
         figure {
             height: 69%;
             flex: 25%;
             background: violet;
         }
         
-        aside {
-            height: 15%;
-            flex: 100%;
-            background: tomato;
-        }
+        
         
         footer {
             height: 4%;
@@ -120,12 +112,7 @@ footer {
         
         }
         
-        article {
-            height: 80%;
-            flex: 100%;
-            background: thistle;
         
-        }
         figure {
             height: 69%;
             flex: 25%;
@@ -133,12 +120,7 @@ footer {
             display: none;
         }
         
-        aside {
-            height: 15%;
-            flex: 100%;
-            background: tomato;
-            display: none;
-        }
+       
         
         footer {
             height: 5%;
@@ -169,13 +151,7 @@ footer {
         
         }
         
-        article {
-            height: 75%;
-            flex: 100%;
-            background: thistle;
-            
         
-        }
         figure {
             height: 69%;
             flex: 25%;
@@ -183,12 +159,7 @@ footer {
             display: none;
         }
         
-        aside {
-            height: 15%;
-            flex: 100%;
-            background: tomato;
-            display: none;
-        }
+        
         
         footer {
             height: 4%;
@@ -197,3 +168,4 @@ footer {
             display: none;
         }
     }
+    
