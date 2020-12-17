@@ -10,7 +10,6 @@ div.container {
     flex-wrap: wrap;
     flex-direction: row;
     max-height: 100%;
-
 }
 
 header {
